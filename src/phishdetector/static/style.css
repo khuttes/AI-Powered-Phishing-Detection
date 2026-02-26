@@ -1,0 +1,71 @@
+body { font-family: 'Roboto', sans-serif; background: #0d0d1a url('/static/tech-pattern.png') repeat; color: #ddd; position: relative; overflow-x: hidden; scroll-padding-top: 60px; font-size: 14px; }
+#particles-js { position: fixed; width: 100%; height: 100%; z-index: -2; opacity: 0.6; }
+#hero { padding: 120px 0 30px; }
+#hero h1 { font-size: 2.5rem; animation: fadeInDown 1s ease-out; }
+#hero p { font-size:1rem; animation: fadeInUp 1s ease-out; }
+
+.container { max-width: 700px; margin: 80px auto 40px; padding: 15px; background: rgba(20,20,40,0.9); border-radius: 6px; box-shadow: 0 0 15px rgba(0,0,0,0.7); }
+label { display: block; margin-top: 10px; color: #eaeaea; }
+textarea, input, select { background: #22223b; color: #ddd; border: 1px solid #555; border-radius:4px; margin-bottom:4px; }
+textarea { width: 100%; }
+button { margin-top: 8px; padding: 6px 12px; font-size:0.9rem; }
+#result { margin-top: 15px; font-size:0.85rem; }
+#result table td, #result table th { padding: 4px 6px; }
+#history { font-size:0.8rem; }
+#scoreChart { max-height: 150px; }
+
+.card { background: linear-gradient(135deg, #2b2b5e, #1d1d3b); }
+.card-title { font-size: 1.1rem; }
+.card-text { font-size: 0.85rem; }
+
+/* reduce spacing in lists/cards */
+.list-group-item { background:#1e1e2f; border:none; }
+
+/* small footer */
+footer { font-size: 0.75rem; }
+
+/* hover animation for cards */
+.hover-effect:hover { transform: translateY(-5px); transition: transform 0.3s; }
+
+/* hero animations */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* make result table scrollable on small screens */
+#result table { max-width: 100%; overflow-x: scroll; }
+
+/* style cards and forms */
+.card { border: none; }
+.navbar-brand img { filter: invert(1); }
+.navbar-nav .nav-link { font-size:0.9rem; padding:0.3rem 0.6rem; }
+
+/* footer styling */
+footer { font-size: 0.8rem; }
+footer a { text-decoration: underline; }
+
+/* back-to-top button */
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 1000;
+}
+
+/* subtle gradient background for body */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+    z-index: -1;
+}
