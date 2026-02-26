@@ -1,6 +1,7 @@
 # AI Phishing Detector
 
 This repository contains an experimental implementation of an AI-based phishing detection system. It combines header analysis, content intent, URL inspection, and attachment features to classify emails.
+<img src="01.png" alt="" width="500" height="600">
 
 ## Structure
 
@@ -127,3 +128,4 @@ pytest
 ---
 
 Thank you for using the AI Phishing Detector project!
+
